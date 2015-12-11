@@ -19,7 +19,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<script src="js/jquery.min.js"></script>
+	<script src="js/products.js"></script>
 	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
 	<!-- cart -->
 	<script src="js/simpleCart.min.js"> </script>
 	<!-- cart -->
@@ -42,98 +44,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<h1 class="navbar-brand"><a  href="index.html">Monkey Baby</a></h1>
 						</div>
 						<!--/.navbar-header-->
-
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav">
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Photo Props<b class="caret"></b></a>
-								<ul class="dropdown-menu multi-column columns-3">
-									<div class="row">
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a class="list" href="products.html">Women</a></li>
-												<li><a class="list1" href="products.html">PrettySecrets</a></li>
-												<li><a class="list1" href="products.html">N-Gal</a></li>
-												<li><a class="list1" href="products.html">Lobster</a></li>
-												<li><a class="list1" href="products.html">Citypret</a></li>
-											</ul>
-										</div>
-
-
-									</div>
+							<ul class="nav navbar-nav">
+								<ul class="nav navbar-nav">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="products.html">All Products</a></li>
+									<li><a href="single.html?id=2">Photo Props</a></li>
+									<li><a href="single.html?id=7">Pacifiers</a></li>
+									<li><a href="single.html?id=5">Caddy Bags</a></li>
 								</ul>
-							</li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">women <b class="caret"></b></a>
-								<ul class="dropdown-menu multi-column columns-3">
-									<div class="row">
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a class="list" href="products.html">Women</a></li>
-												<li><a class="list1" href="products.html">PrettySecrets</a></li>
-												<li><a class="list1" href="products.html">N-Gal</a></li>
-												<li><a class="list1" href="products.html">Lobster</a></li>
-												<li><a class="list1" href="products.html">Citypret</a></li>
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a class="list" href="products.html">Kids</a></li>
-												<li><a class="list1" href="products.html">River Island</a></li>
-												<li><a class="list1" href="products.html">Penny</a></li>
-												<li><a class="list1" href="products.html">Nidhi Munim</a></li>
-												<li><a class="list1" href="products.html">Divaat</a></li>
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a class="list" href="products.html">Men</a></li>
-												<li><a class="list1" href="products.html">Fiesta Clara</a></li>
-												<li><a class="list1" href="products.html">Quiksilver</a></li>
-												<li><a class="list1" href="products.html">Incult</a></li>
-												<li><a class="list1" href="products.html">Proline</a></li>
-											</ul>
-										</div>
-									</div>
-								</ul>
-							</li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">kids <b class="caret"></b></a>
-								<ul class="dropdown-menu multi-column columns-3">
-									<div class="row">
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a class="list" href="products.html">Women</a></li>
-												<li><a class="list1" href="products.html">PrettySecrets</a></li>
-												<li><a class="list1" href="products.html">N-Gal</a></li>
-												<li><a class="list1" href="products.html">Lobster</a></li>
-												<li><a class="list1" href="products.html">Citypret</a></li>
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a class="list" href="products.html">Kids</a></li>
-												<li><a class="list1" href="products.html">River Island</a></li>
-												<li><a class="list1" href="products.html">Penny</a></li>
-												<li><a class="list1" href="products.html">Nidhi Munim</a></li>
-												<li><a class="list1" href="products.html">Divaat</a></li>
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a class="list" href="products.html">Men</a></li>
-												<li><a class="list1" href="products.html">Fiesta Clara</a></li>
-												<li><a class="list1" href="products.html">Quiksilver</a></li>
-												<li><a class="list1" href="products.html">Incult</a></li>
-												<li><a class="list1" href="products.html">Proline</a></li>
-											</ul>
-										</div>
-									</div>
-								</ul>
-							</li>
-							<li><a href="products.html">Top</a></li>
-							<li><a href="products.html">Bikini</a></li>
-						</ul>
+							</ul>
 						</div>
 						<!--/.navbar-collapse-->
 					</nav>
@@ -216,110 +136,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container">
 			<h3>Featured products</h3>
 			<div class="gallery-grids">
-				<div class="col-md-3 gallery-grid ">
-					<a href="products.html"><img src="images/white.jpg" class="img-responsive front-page" alt="">
-						<div class="gallery-info">
-							<div class="quick">
-								<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
-							</div>
-						</div></a>
-						<div class="galy-info">
-							<p>Amour Women’s Amour...</p>
-							<div class="galry">
-								<div class="prices">
-									<h5 class="item_price">$95.00</h5>
-								</div>
-								<div class="rating">
-									<span>☆</span>
-									<span>☆</span>
-									<span>☆</span>
-									<span>☆</span>
-									<span>☆</span>
-								</div>
-
-								<div class="clearfix"></div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 gallery-grid">
-						<a href="products.html"><img src="images/purple.jpg" class="img-responsive front-page" alt="">
+				<div id="placeholder"></div>
+				<script id="products-template" type="text/x-handlebars-template">
+					{{#each products}}
+					<div class="col-md-3 gallery-grid ">
+						<a href="single.html?id={{id}}"><img src="{{img}}" class="img-responsive" alt="">
 							<div class="gallery-info">
 								<div class="quick">
 									<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
 								</div>
 							</div></a>
 							<div class="galy-info">
-								<p>Amour Women’s Amour...</p>
+								<p>{{name}}</p>
 								<div class="galry">
 									<div class="prices">
-										<h5 class="item_price">$95.00</h5>
+										<h5 class="item_price">${{price}}</h5>
 									</div>
-									<div class="rating">
-										<span>☆</span>
-										<span>☆</span>
-										<span>☆</span>
-										<span>☆</span>
-										<span>☆</span>
-									</div>
-
 									<div class="clearfix"></div>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-3 gallery-grid">
-							<a href="products.html"><img src="images/blue.jpg" class="img-responsive front-page" alt="">
-								<div class="gallery-info">
-									<div class="quick">
-										<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
-									</div>
-								</div></a>
-								<div class="galy-info">
-									<p>Amour Women’s Amour...</p>
-									<div class="galry">
-										<div class="prices">
-											<h5 class="item_price">$95.00</h5>
-										</div>
-										<div class="rating">
-											<span>☆</span>
-											<span>☆</span>
-											<span>☆</span>
-											<span>☆</span>
-											<span>☆</span>
-										</div>
-
-										<div class="clearfix"></div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3 gallery-grid">
-								<a href="products.html"><img src="images/pink.jpg" class="img-responsive front-page" alt="">
-									<div class="gallery-info">
-										<div class="quick">
-											<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
-										</div>
-									</div></a>
-									<div class="galy-info">
-										<p>Amour Women’s Amour...</p>
-										<div class="galry">
-											<div class="prices">
-												<h5 class="item_price">$95.00</h5>
-											</div>
-											<div class="rating">
-												<span>☆</span>
-												<span>☆</span>
-												<span>☆</span>
-												<span>☆</span>
-												<span>☆</span>
-											</div>
-
-											<div class="clearfix"></div>
-										</div>
-									</div>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-						</div>
-					</div>
+						{{/each}}
+					</script>
+				</div>
+			</div>
+		</div>
 	<div class="subscribe">
 		<div class="container">
 			<div class="subscribe1">
@@ -389,6 +230,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 	</div>
 	<!--footer-->
+	<script>
+		function getRandomSubarray(arr, size) {
+		    var shuffled = arr.slice(0), i = arr.length, temp, index;
+		    while (i--) {
+		        index = Math.floor((i + 1) * Math.random());
+		        temp = shuffled[index];
+		        shuffled[index] = shuffled[i];
+		        shuffled[i] = temp;
+		    }
+		    return shuffled.slice(0, size);
+		}
+
+		var RandomProducts = getRandomSubarray(products, 8);
+		var createProducts = function() {
+			var template = Handlebars.compile($('#products-template').html());
+			$('#placeholder').replaceWith(template({ products: RandomProducts }));
+		}
+
+		$(document).on('ready', function(e) {
+			createProducts();
+		});
+	</script>
 
 </body>
 </html>
